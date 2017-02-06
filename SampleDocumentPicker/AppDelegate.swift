@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SampleDocumentPicker
 //
-//  Created by okuri on 2017/02/06.
+//  Created by amarrron on 2017/02/06.
 //  Copyright © 2017年 amarron. All rights reserved.
 //
 
