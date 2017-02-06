@@ -8,8 +8,8 @@ SampleDocumentPicker is the iOS app that can import and export to data files.
 Programming language is written in swift3.0.
 
 
-![](images/ScreenShot1.png)
-![](images/ScreenShot2.png)
+![](images/Screenshot1.png)
+![](images/Screenshot2.png)
 
 
 ## Note
