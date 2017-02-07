@@ -29,12 +29,14 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UIDocumentMenu
         let importPicker = UIDocumentPickerViewController(documentTypes: self.UTIs, in: .import)
         importPicker.delegate = self
         present(importPicker, animated: true, completion: nil)
+        
     }
     
     // Save to this application from other applications
     @IBAction func importDocumentMenu(_ sender: Any) {
         let importMenu = UIDocumentMenuViewController(documentTypes: self.UTIs, in: .import)
         importMenu.delegate = self
+        importMenu.popoverPresentationController?.sourceView = self.view
         present(importMenu, animated: true, completion: nil)
     }
     
@@ -55,6 +57,7 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UIDocumentMenu
         let url = Bundle.main.url(forResource: "image", withExtension: "jpg")
         let exportMenu = UIDocumentMenuViewController(url: url!, in: UIDocumentPickerMode.exportToService)
         exportMenu.delegate = self
+        exportMenu.popoverPresentationController?.sourceView = self.view
         present(exportMenu, animated: true, completion: nil)
         
     }
